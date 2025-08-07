@@ -12,6 +12,7 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
+      initialRouteName="Home"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -220,8 +221,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   scanArea: {
-    width: 250,
-    height: 250,
+    width: 428,
+    height: 269.9,
     borderWidth: 2,
     borderColor: '#23844fff',
     borderRadius: 10,
